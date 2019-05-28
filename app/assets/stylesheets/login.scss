@@ -1,0 +1,24 @@
+// Place all the styles related to the login controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+#flbox {
+  &::after {
+    content: ".";
+    display: inline-block;
+    clear: both;
+    width: 0;
+    height: 0;
+    visibility: hidden;
+  }
+  .box-button {
+    display: block;
+    float: left;
+    width: 150px;
+    height: 45px;
+    text-align: center;
+    line-height: 45px;
+    background: #2098A8;
+    color: #fff;
+    text-decoration: none;
+  }
+}

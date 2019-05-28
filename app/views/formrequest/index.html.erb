@@ -1,0 +1,43 @@
+<% @result.each do | user | %>
+  <form action="/request" method="post" id="form1">
+    <div class="label">依頼者名</div>
+    <div class="input-box">
+      <input type="text" name="name" class="input" required value="<%= user[:uname] %>">
+    </div>
+    <div class="label">依頼分類</div>
+    <div class="input-box">
+      <select name="type" class="select-box">
+        <option value="DWM関連">DWM関連</option>
+        <option value="サーバ関連">サーバ関連</option>
+        <option value="その他">その他</option>
+      </select>
+    </div>
+    <div class="label">チーム</div>
+    <div class="input-box">
+      <select name="team" class="select-box">
+        <option value="第一開発チーム">第一開発チーム</option>
+        <option value="第二開発チーム">第二開発チーム</option>
+        <option value="第三開発チーム">第三開発チーム</option>
+      </select>
+    </div>
+    <div class="label">商材名</div>
+    <div class="input-box">
+      <input type="text" name="project" class="input" required>
+    </div>
+    <div class="label">案件名</div>
+    <div class="input-box">
+      <input type="text" name="products" class="input" required>
+    </div>
+    <div class="label">依頼詳細</div>
+    <div class="input-box">
+      <textarea name="detail" class="area" required></textarea>
+    </div>
+    <div class="label">希望納期</div>
+    <div class="input-box">
+      <input type="datetime-local" name="datetime" class="input" required>
+    </div>
+    <div class="input-box">
+      <input type="submit" value="送信" class="submit">
+    </div>
+  </form>
+<% end %>
