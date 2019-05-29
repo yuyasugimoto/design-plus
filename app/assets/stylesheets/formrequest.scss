@@ -30,3 +30,55 @@
     }
   }
 }
+
+.side {
+  width: 20vw;
+  height: 100vh;
+  background: #191919;
+  color: #ffffff;
+  #new-note {
+    width: 20vw;
+    height: 35px;
+    line-height: 35px;
+    .note-png {
+      position: relative;
+      top: 2px;
+      width: 16px;
+      height: 16px;
+      line-height: 16px;
+      margin-left: 10px;
+      margin-right: 10px;
+    }
+  }
+}
+.note {
+  width: 30vw;
+  height: 100vh;
+  background: #BBBBBB;
+}
+.edit {
+  width: 50vw;
+  height: 100vh;
+  background: #AAAAAA;
+}
+
+.note-list {
+  margin: 0 10px;
+  padding: 0;
+  width: 30vw;
+  height: 35px;
+  .note-label {
+    margin: 15px 0px;
+    font-size: 13px;
+  }
+  ul {
+    list-style-type: none;
+    font-size: 13px;
+    li {
+      padding: 10px 0px;
+    }
+    &.hide {
+      display: none;
+    }
+  }
+}
