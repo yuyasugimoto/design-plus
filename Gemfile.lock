@@ -125,7 +125,8 @@ GEM
     nokogumbo (2.0.1)
       nokogiri (~> 1.8, >= 1.8.4)
     public_suffix (3.0.3)
-    puma (3.12.1)
+    puma (4.3.11)
+      nio4r (~> 2.0)
     pygments.rb (1.2.1)
       multi_json (>= 1.0.0)
     qiita-markdown (0.27.0)
@@ -235,7 +236,7 @@ DEPENDENCIES
   jbuilder (~> 2.5)
   listen (>= 3.0.5, < 3.2)
   mysql2 (>= 0.4.4, < 0.6.0)
-  puma (~> 3.11)
+  puma (~> 4.3)
   qiita-markdown
   rails (~> 5.2.3)
   sass-rails (~> 5.0)
